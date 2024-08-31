@@ -1,0 +1,40 @@
+{
+  "players": [
+    {
+      "environment": "External",
+      "sourceConfig": {
+        "title": "test 1",
+        "externalManifestUrl" : "https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8",
+        "isLive": false
+
+      }
+    },
+    {
+      "environment": "External",
+      "sourceConfig": {
+        "title": "test 1",
+        "externalManifestUrl" : "https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8",
+        "isLive": false
+
+      }
+    },
+    {
+      "environment": "External",
+      "sourceConfig": {
+        "title": "test 1",
+        "externalManifestUrl" : "https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8",
+        "isLive": false
+
+      }
+    },
+    {
+      "environment": "External",
+      "sourceConfig": {
+        "title": "test 1",
+        "externalManifestUrl" : "https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8",
+        "isLive": false
+
+      }
+    }
+  ]
+}
