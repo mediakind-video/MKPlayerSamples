@@ -41,7 +41,7 @@ android {
 dependencies {
 
 
-    implementation("com.mediakind:mkplayer:1.22.0@aar") {
+    implementation("com.mediakind:mkplayer:1.23.0@aar") {
         isTransitive = true
     }
     implementation(libs.androidx.core.ktx)
