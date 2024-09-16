@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="32700.99.1234" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiviewDemoAppTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5Sd-F1-gAi">
+                                <rect key="frame" x="80" y="60" width="1760" height="960"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-fy-rge">
+                                        <rect key="frame" x="0.0" y="0.0" width="1760" height="480"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHW-CH-UVv">
+                                                <rect key="frame" x="0.0" y="0.0" width="880" height="480"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fc-si-EdX">
+                                                <rect key="frame" x="880" y="0.0" width="880" height="480"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-l8-P2J">
+                                        <rect key="frame" x="0.0" y="480" width="1760" height="480"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE0-PY-IeF">
+                                                <rect key="frame" x="0.0" y="0.0" width="880" height="480"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pm2-jI-gbn">
+                                                <rect key="frame" x="880" y="0.0" width="880" height="480"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Sd-F1-gAi" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="ADq-zs-iAE"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="5Sd-F1-gAi" secondAttribute="bottom" id="Pvb-3H-jNw"/>
+                            <constraint firstItem="5Sd-F1-gAi" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" id="py3-Ub-XG4"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="5Sd-F1-gAi" secondAttribute="trailing" id="yLK-gV-yna"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView1" destination="gHW-CH-UVv" id="Anf-D3-JBe"/>
+                        <outlet property="playerView2" destination="7fc-si-EdX" id="x9S-dD-Hnm"/>
+                        <outlet property="playerView3" destination="nE0-PY-IeF" id="4Av-DJ-Phi"/>
+                        <outlet property="playerView4" destination="Pm2-jI-gbn" id="tL3-PF-NMx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="3"/>
+        </scene>
+    </scenes>
+</document>
